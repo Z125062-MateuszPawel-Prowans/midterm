@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Prowans - Portfolio</title>
+
+    <!-- Preload intro image, as its the first thing user sees -->
+    <link rel="preload" as="image" href="/img/intro.jpg">
+
+    <!-- Load all the stylesheets -->
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Icon stylesheet -->
+    <link rel="stylesheet" href="css/fontello.css">
+
+    <!-- Load script responsible for shuffling the title -->
+    <script src="js/titleShuffle.js"></script>    
+
+    <!-- Load font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Style for header that will be fixed to the top of the page -->
+    <header id="navbar">
+        <h1>Mateusz Prowans</h1>
+        <!-- Links allowing to navigate to different sections of the page -->
+        <nav>            
+            <a href="#about">About</a>
+            <a href="#photography">Photography</a>
+            <a href="#coding">Coding</a>            
+            <a href="#contact">Contact</a>            
+        </nav>
+    </header>
+
+    <!-- Button in the top right corner of the page, allowing to scroll up and down between sections -->
+    <div id="elevator">
+        <div class="elevatorbutton center" onclick="sectionUp()">
+            <object data="svg/up_arrow.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="elevatorbutton center" onclick="sectionDown()">
+            <object data="svg/down_arrow.svg" type="image/svg+xml"></object>
+        </div>
+    </div>
+
+    <!-- Main content of the page, divided into sections -->
+    <main>
+        <!-- "Welcome" section, eye catching introduction to the page -->
+        <section id="intro" class="slide">
+            <div id="introtext" class="center"></div>
+            <div id="lastupdate">Last update: TOKYO JAPAN 2025/05/21</div>
+            <div id="arrowindicator">
+                <a href="#selectionpanels">
+                    <object data="svg/down_arrow.svg" type="image/svg+xml"></object>
+                </a>
+            </div>
+        </section>
+
+        <!-- Selection panels, allowing to choose between photography and coding -->
+        <section id="selectionpanels" class="slide">
+            <div class="selectionpanels">
+                <div class="panel">
+                    <a class="panelText center" href="#photography">
+                        Photography
+                    </a>
+                    <img id="photopanel" src="img/photography.jpg" alt="" class="panelImage">                
+                </div>
+                <div class="panel">
+                    <a class="panelText center" href="#coding">
+                        Coding
+                    </a>
+                    <img src="img/coding.jpg" alt="" class="panelImage">                
+                </div>
+            </div>            
+        </section>
+
+        <!-- About section, introducing the author of the page -->
+        <section id="about" class="slide articleslide slidepadding">
+            <div class="articletext">
+                <h1>About</h1>
+                <h2>Mateusz Prowans</h2>
+                <p>
+                    I am a 21 year old student from Poland, currently living in Tokyo, Japan. Despite my major being Computer Science, I have a strong passion for photography and coding.
+                </p>
+                <p>
+                    My journey in photography started as a hobby, but it quickly turned into a passion that I pursue with dedication.
+                    I love capturing moments and creating visual stories through my lens.
+                </p>
+                <p>
+                    In addition to photography, I am also an avid coder. I enjoy exploring new technologies and building projects that solve real-world problems.
+                    My coding skills range from web development to data analysis, and I am always eager to learn more.
+                </p>
+            </div>
+            <div class="articleimg">
+                <img src="img/mateuszprowans.jpg" alt="Mateusz Prowans" class="aboutimage">
+            </div>
+        </section>
+
+        <!-- Photography section, showcasing my photography history -->
+        <section id="photography" class="slide articleslide slidepadding">
+            <div class="articleimg">
+                <img src="img/photographyme.jpg" alt="Me posing with camera" class="aboutimage">
+            </div>
+
+            <div class="articletext" class="rightside">
+                <h1>Photography</h1>
+                <h2>Sony Alpha 7 II</h2>
+                <p>
+                    I started my photography journey with an old digicam, quickly got a DSLR, and then I knew I need a full-frame camera.
+                    My Sony Alpha 7 II is my trusty companion, and I love capturing the world through its lens. It has never let me down, since the day I bought it.
+                </p>
+                <p>                    
+                    Japan being said to be the most photogenic country in the world, is the perfect place for me to explore my passion.
+                    I love capturing the beauty of nature, the emotions of people, and the stories that unfold in front of me.
+                </p>
+                <p><a href="#gallery" class="hyperlink">See latest photos</a></p>
+                <p><a href="https://photo.prowans.com" class="hyperlink">Visit photo gallery and blog</a></p>
+            </div>
+        </section>
+
+        <!-- Gallery section, showcasing the latest photos taken by me -->
+        <section id="gallery" class="slide slidepadding">
+                <div class="columnswrapper">
+                <div class="contentcolumn">
+                    <h1>Meguro</h1>
+                    <div class="imageContainer">
+                    <img src="img/meguro/1.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/2.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/3.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/4.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/5.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/6.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/7.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/8.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/9.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/meguro/10.jpg" alt="Meguro" /><a
+                        href="https://photo.prowans.com/gallery/meguro"
+                        ><div class="overlay">Meguro</div></a
+                    >
+                    </div>
+                </div>
+                <div class="contentcolumn">
+                    <h1>Tokyo tower</h1>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/1.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/2.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/3.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/4.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/5.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/6.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/7.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/8.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/9.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/10.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/tokyotower/11.jpg" alt="Tokyo tower" /><a
+                        href="https://photo.prowans.com/gallery/tokyotower"
+                        ><div class="overlay">Tokyo tower</div></a
+                    >
+                    </div>
+                </div>
+                <div class="contentcolumn">
+                    <h1>Akihabara</h1>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/1.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/2.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/3.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/4.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/5.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/6.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/7.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/8.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/9.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/10.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                    <div class="imageContainer">
+                    <img src="img/akihabara/11.jpg" alt="Akihabara" /><a
+                        href="https://photo.prowans.com/gallery/akihabara"
+                        ><div class="overlay">Akihabara</div></a
+                    >
+                    </div>
+                </div>
+                </div>
+                <div class="seemore" onclick="expandGallery()"><p>Expand</p></div>
+
+        </section>
+
+        <!-- Coding section explaining my coding journey -->
+        <section id="coding" class="slide articleslide slidepadding">
+            <div class="articletext">
+                <h1>Coding</h1>
+                <h2>My Coding Journey</h2>
+                <p>
+                    I started coding when I was 7 years old, and it has been a passion of mine ever since.
+                </p>
+                <p>
+                    I love exploring new technologies and building projects that demand my creativity and problem-solving skills.
+                </p>
+                <p>
+                    I have tried my fair share at creating games, building web applications, and even dabbling in data analysis, but there is nothing more satisfying than creating something that seems to be breaking the rules - just like my visual novel game Projekt Zero run completely in Windows 10 Command Prompt. Including 3D.
+                </p>
+                <p><a href="#codinggallery" class="hyperlink">Quick preview</a></p>
+                <p><a href="https://coding.prowans.com" class="hyperlink">Visit my coding blog</a></p>
+            </div>
+
+            <div class="articleimg">
+                <img src="img/coding.jpg" alt="coding" class="aboutimage">
+            </div>
+        </section>
+
+        <!-- Coding gallery section, showcasing my coding projects -->
+        <section id="codinggallery" class="columnswrapper extendingslide slidepadding">
+            <div class="contentcolumn">
+                <h1>Games</h1>
+                <p>The games I published were mostly entries to various Game Jams I participated in.</p>
+                <p>My most satisfying achievement was developing an engine for Command Prompt oriented games. Three of those are available at my <a href="https://osicat.itch.io/" class="hyperlink">itch.io</a>, with the one I am most proud of being Projekt Zero.</p>
+                <iframe src="https://itch.io/embed/1325793" width="552" height="167" frameborder="0"><a href="https://osicat.itch.io/projekt-zero">Projekt Zero DEMO by Osicat</a></iframe>
+                <iframe src="https://itch.io/embed/1858190" width="552" height="167" frameborder="0"><a href="https://osicat.itch.io/cozy-hunt">Cozy Hunt by Osicat</a></iframe>
+                <iframe src="https://itch.io/embed/1848994" width="552" height="167" frameborder="0"><a href="https://osicat.itch.io/jcole-the-masked-goal">JCole: The Masked Goal by Osicat</a></iframe>
+            </div>
+            <div class="contentcolumn">
+                <h1>Web apps</h1>
+                <p>Despite my heart being filled with hate towards JavaScript, I learned to love it - thus making Web Applications became a hobby of mine.</p>
+                <p>My applications range from internal projects, real time and detailed telemetry analysis through life innovating software's to silly projects.</p>
+                <p>Checkout the Omikuji website, if you want to get an AI generated fortune, or spend some time on LearnKana to learn some japanese vocabulary.</p>
+                <div class="imageContainer">
+                    <img src="img/omikuji.jpg" alt="Omikuji website screenshot">
+                    <a href="https://ai.omikuji.prowans.com" target="_blank">
+                        <div class="overlay">Omikuji</div>
+                    </a>
+                </div>
+                <div class="imageContainer">
+                    <img src="img/learnkana.jpg" alt="LearnKana website screenshot">
+                    <a href="https://learnkana.prowans.com" target="_blank">
+                        <div class="overlay">LearnKana</div>
+                    </a>
+                </div>
+            </div>
+            <div class="contentcolumn">
+                <h1>Embedded</h1>
+                <p>In high school I came across point, where I had to extend my programming skills to the overworld dimension. The answer was simple - embedded systems.</p>
+                <p>With microcontrollers, such as ESP32, Raspberry solutions and other sweetboards I managed to finish a wide variety of projects, audio synchronized RGB LED system, retrieving running car engine parameters or my favourite one - handy lua programmable RGB LED keychain.</p>
+                <video src="vid/keychain.mp4" loop="true" autoplay="autoplay" muted></video>
+            </div>
+        </section>
+        
+        <!-- Contact section, allowing to get in touch with me -->
+        <section id="contact" class="slide slidepadding">
+            <div class="articletext">
+                <h2>Contact</h2>
+                <p>
+                    If you want to get in touch with me, feel free to reach out through any of the platforms below.
+                    I am always open to new opportunities and collaborations.
+                    Accepting emails, DMs, and even Discord messages.
+                </br><em>mateusz@prowans.com</em>
+                </br><em>pusikat</em>
+                </br><em>ziolo.prowansalskie</em>
+                </p>
+            </div>
+            <div id="contactswrapper">
+                    <a href="mailto:mateusz@prowans.com" class="contact-icon icon-mail"></a>
+                    <a href="https://www.instagram.com/ziolo.prowansalskie/" class="contact-icon icon-instagram"></a>
+                    <a href="https://discordapp.com/users/285370418901286912" class="contact-icon icon-discord"></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer, present all the time at the bottom of the screen, containing copyright information -->
+    <footer>
+            <p>Designed and developed by Mateusz Prowans &copy; 2025</p>
+    </footer>
+
+    <!-- Load the scripts responsible for the page functionality -->
+    <script>
+        // Script responsible for scaling the iframes in the gallery section
+        // This is needed to ensure that the iframes fit nicely in the columns
+        function scaleIframe() {
+            const wrappers = document.querySelectorAll('.contentcolumn');
+            wrappers.forEach(wrapper => {
+                const iframes = wrapper.querySelectorAll('iframe');                
+                iframes.forEach(iframe => {
+                    const iframeWidth = iframe.offsetWidth;
+                    const scale = wrapper.offsetWidth / iframe.width;
+                    iframe.style.transform = `scale(${scale})`;
+                });
+            });
+        }
+
+        // Call the scaleIframe function on window resize and DOMContentLoaded - whenever the iframes need to be scaled
+        window.addEventListener('resize', scaleIframe);
+        window.addEventListener('DOMContentLoaded', scaleIframe);
+    </script>
+
+    <!-- Load script responsible for scrolling between sections -->
+    <script src="js/scrollMagic.js"></script>
+
+    <script>
+        // Create a function that will expand the gallery section when the "Expand" button is clicked
+        function expandGallery() {
+            const pg = document.getElementById("gallery");
+            pg.classList.add("expandingslide");
+            pg.classList.remove("slide");
+            pg.getElementsByClassName("seemore")[0].style.display = "none";
+        }
+    </script>
+</body>
+</html>

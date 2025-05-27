@@ -1,0 +1,55 @@
+%!Adobe-FontList 1.24
+%Locale:0x415
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Projects\Web design and programming\portfolio\Font\fontello.eot
+FileModTime:1747142694
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Projects\Web design and programming\portfolio\Font\fontello.svg
+FileModTime:1747142694
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:fontello
+FamilyName:fontello
+StyleName:Regular
+FullName:fontello
+MenuName:fontello
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Projects\Web design and programming\portfolio\Font\fontello.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:6492
+FileModTime:1747142694
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,fontello
+NameArray:0,Win,1,fontello
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Projects\Web design and programming\portfolio\Font\fontello.woff
+FileModTime:1747142695
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Projects\Web design and programming\portfolio\Font\fontello.woff2
+FileModTime:1747142695
+%EndFont
+

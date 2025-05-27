@@ -1,0 +1,52 @@
+/*
+    * Contact CSS
+    * This file contains styles for the contact section of the website.
+*/
+
+/* Default contact section slide look */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20%;
+}
+
+/* Wrapper and styles for individual contact icons */
+#contactswrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+a.contact-icon {
+    text-decoration: none;
+}
+
+.contact-icon {
+    color: white;
+    font-size: 3rem;
+
+    transition: .2s;
+}
+
+.contact-icon:hover {
+    transition: .2s;
+}
+
+/* Different colors matching logos of all the icons */
+
+.icon-instagram:hover {
+    filter: drop-shadow(0 0 0.75rem #E1306C);
+}
+
+.icon-mail:hover {
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.icon-discord:hover {
+    filter: drop-shadow(0 0 0.75rem #7289da);
+}
