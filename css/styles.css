@@ -255,7 +255,7 @@ main::-webkit-scrollbar {
 #intro {
     position: relative;
 
-    background-image: url("/img/intro.jpg");
+    background-image: url("img/intro.jpg");
     background-size: cover;
 
     background-position: center;
